@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+    
+<html lang="en">
+    <head>
+        <title>Baseball Stats Comparator</title>
+        <link rel="stylesheet" type="text/css" href="../styles/home_styles.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../script/logout_script.js"></script>
+        <script type="text/javascript" src="../scripts/player_search_script.js"></script>
+        <script type="text/javascript" src="../scripts/prop_to_table_script.js"></script>
+        <script type="text/javascript" src="../scripts/set_sessionHome_script.js"></script>
+     
+
+    </head>
+    <body>
+        <h1 id="userTitle"></h1>  
+      
+
+        <div class="search">
+            <form class="last_name" onSubmit="return false;">
+                <label for="last_name" class="search_text">Search By Last Name</label>
+                <input type="text" name="lastname_input" id="last_name"/>
+                <input type="button" value="Search" id="lastname_search"/>
+                <input type="button" value="left" class="propogate" id="left_but" />
+                <input type="button" value="right" class="propogate" id="right_but"/>
+            </form>
+
+            <select id="players_by_last_name">
+            </select>
+
+        </div>
+
+
+    	<div class="content_left"></div>
+
+    	<div class="content_right"></div>
+ 		  
+ 		<div class="button-holder">
+            <span class="button logout">Log Out</span>
+        </div>
+    
+    
+        
+    </body>
+</html>
